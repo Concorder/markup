@@ -2,7 +2,10 @@
 // document.getElementsByTagName('a').style['pointer-events'] = 'none';
 // Cheching of login/profile window
 
-
+window.onbeforeunload = function(e) {
+    (e || window.event).returnValue = null;
+    return null;
+};
 var leaders_display = document.getElementById('leader_time');
 var user_new_time = document.getElementById('user_new_time');
 
