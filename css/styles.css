@@ -663,6 +663,10 @@ box-sizing: border-box;}
   width: 100%;
   position: absolute;
   border-radius: 5px;
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  visibility:visible;
   backface-visibility: hidden;
 }
 .front-face {
@@ -743,6 +747,9 @@ form >span {margin-bottom: 0px;}
 	width: 273px;
 	padding: 10px 0px;
 }
+.float-right-block {
+margin-right: 15px;
+}
 
 /*==================MOBILE___GAME==============*/
 .main > section > .wrapper {
@@ -796,11 +803,15 @@ footer li {
 #user_new_time {
 	margin-bottom: 30px;}
 
-
+/*====OLD PHONES=====*/
 @media (max-width: 360px) {
 	#user_time, #leader_time, #user_best_time {
 	margin-bottom: 15px;
 }
+.header_logo {
+    width: 140px;
+    margin-top: -3px;
+    padding: 6px 0;}
 form > textarea {
 	height: 65px;
 }
