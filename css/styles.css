@@ -806,7 +806,7 @@ footer li {
 /*====OLD PHONES=====*/
 @media (max-width: 360px) {
 	#user_time, #leader_time, #user_best_time {
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 }
 .header_logo {
     width: 140px;
@@ -820,7 +820,32 @@ margin-top: 0px;}
 .profile_box span {
     font-size: 26px;
 }
+h3 {
+	bottom: 0px;
+}
 span.improve_small {
     font-size: 14px;
 }
 
+.right_img {
+	top: 0px;
+	right: -80%;
+}
+.left_img {
+    left: -20%;
+    top: -35%;
+}
+h2 {
+	margin-bottom: 0px;
+}
+.profile_box span {
+    margin-bottom: 0px;
+}
+span.improve_small {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.memory-card img {
+    width: 85%;}
+.log_out_button {
+	margin-top: 10px;
