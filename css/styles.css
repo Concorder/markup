@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700i,800i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Courier+Prime:700&display=swap');
 
 html, body, h1, h2, h3, h4, div, section, ul {
 	margin: 0;
@@ -626,9 +625,8 @@ font-size: 16px;
 }
 #timer {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 600;
 	color: #ff0036;
-	font-family: 'Courier Prime', monospace;
 }
 #result{display: none}
 .memory-game {
@@ -709,11 +707,18 @@ span.improve_small {
 @media (max-width: 500px) {
 body {overflow-x: hidden;}
 h2 {line-height: 1.1; margin-bottom: 25px;  }
+h3 {bottom: 45px;}
 p {font-size: 14px; max-width: 200px;}
 .main_text {margin-left: 0px;}
 .main-section {
 	height: 100%;
 }
+.main_bg{padding-bottom: 25px;
+min-height: 610px;}
+.main_bg.game {
+	padding-bottom: 85px;
+}
+
 .modal-content {max-width: 90%;}
 .center_content {display: flex;
     align-items: center;
@@ -733,7 +738,7 @@ h2.left{text-align: left;}
     width: 170px;
     z-index: 20;
 }
-.profile_box { width: max-content; height: 55%; }
+.profile_box { width: max-content; height: 47%; }
 
 .profile_box span {
 	margin-bottom: 10px;
@@ -747,16 +752,15 @@ form >span {margin-bottom: 0px;}
 	width: 273px;
 	padding: 10px 0px;
 }
-.float-right-block {
-margin-right: 15px;
-}
 
 /*==================MOBILE___GAME==============*/
 .main > section > .wrapper {
-	height: calc(100% - 12px);}
+
+	height: calc(100% - 10px);}
 	.main_bg.game {
 		display: block;
 	}
+
 .memory-game {
 
     height: 95%;
@@ -790,9 +794,12 @@ input {
 	display: none;
 }
 footer {
-	overflow: visible;
-	height: 225px;
-	bottom: -160px;
+	margin-top: -74px;
+	height: unset;
+    position: relative;
+    width: 100%;
+    bottom: unset;
+    overflow: visible;
 }
 footer > .wrapper {
 	z-index: 20;
@@ -803,15 +810,11 @@ footer li {
 #user_new_time {
 	margin-bottom: 30px;}
 
-/*====OLD PHONES=====*/
+
 @media (max-width: 360px) {
 	#user_time, #leader_time, #user_best_time {
-	margin-bottom: 0px;
+	margin-bottom: 15px;
 }
-.header_logo {
-    width: 140px;
-    margin-top: -3px;
-    padding: 6px 0;}
 form > textarea {
 	height: 65px;
 }
@@ -820,32 +823,7 @@ margin-top: 0px;}
 .profile_box span {
     font-size: 26px;
 }
-h3 {
-	bottom: 0px;
-}
 span.improve_small {
     font-size: 14px;
 }
 
-.right_img {
-	top: 0px;
-	right: -80%;
-}
-.left_img {
-    left: -20%;
-    top: -35%;
-}
-h2 {
-	margin-bottom: 0px;
-}
-.profile_box span {
-    margin-bottom: 0px;
-}
-span.improve_small {
-	margin-top: 0px;
-	margin-bottom: 5px;
-}
-.memory-card img {
-    width: 85%;}
-.log_out_button {
-	margin-top: 10px;
