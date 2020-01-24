@@ -753,6 +753,11 @@ form >span {margin-bottom: 0px;}
 	padding: 10px 0px;
 }
 
+.main > section > .wrapper.terms {
+    max-width: 630px;
+    height: 90%;
+}
+
 /*==================MOBILE___GAME==============*/
 .main > section > .wrapper {
 
